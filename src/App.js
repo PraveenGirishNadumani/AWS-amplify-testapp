@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
-import React from "react";
+// import React from "react";
 import Amplify from "aws-amplify";
 import awsConfig from "./aws-exports";
 import { withAuthenticator } from "@aws-amplify/ui-react";
@@ -13,10 +13,10 @@ Amplify.configure(awsConfig);
 const onSignOutClick = async () => {
   await Auth.signOut()
       .then(data => {
-        console.log('success',data);
+        // console.log('success',data);
         window.location.reload(false);
       })
-      .catch(err => console.log('error',err));
+      .catch();
 }
 
 function App() {
