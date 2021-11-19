@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifytestapp-dev-201635-authRole",
+      "UnauthRoleArn": "arn:aws:iam::634137457552:role/amplify-amplifytestapp-dev-201635-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::634137457552:role/amplify-amplifytestapp-dev-201635-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifytestapp-dev-201635-deployment",
+      "UnauthRoleName": "amplify-amplifytestapp-dev-201635-unauthRole",
+      "StackName": "amplify-amplifytestapp-dev-201635",
+      "StackId": "arn:aws:cloudformation:us-east-2:634137457552:stack/amplify-amplifytestapp-dev-201635/82f06120-4947-11ec-9ccd-0aacb64a4d16",
+      "AmplifyAppId": "d1x8hc2k73m29b"
+    }
+  },
+  "auth": {
+    "amplifytestapp4a3015da": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifytestapp-dev-201635-deployment/amplify-cfn-templates/auth/amplifytestapp4a3015da-cloudformation-template.json",
+        "logicalId": "authamplifytestapp4a3015da"
+      },
+      "lastPushTimeStamp": "2021-11-19T14:52:44.644Z",
+      "output": {
+        "UserPoolId": "us-east-2_UcNMTDQ9v",
+        "AppClientIDWeb": "2765e18m5gfvr950bhpkds0r5c",
+        "AppClientID": "5vibu0q6rirfthesn7prknna94",
+        "IdentityPoolId": "us-east-2:b3552ea3-6555-48c7-91b4-562250b6ae12",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:634137457552:userpool/us-east-2_UcNMTDQ9v",
+        "IdentityPoolName": "amplifytestapp4a3015da_identitypool_4a3015da__dev",
+        "UserPoolName": "amplifytestapp4a3015da_userpool_4a3015da"
+      },
+      "lastPushDirHash": "q1v1/v7eV02Yjuz9tmG57Mn/epw="
+    }
+  }
+}
